@@ -1,11 +1,5 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/next"
-    }
-  ],
   "env": {
     "NEXT_PUBLIC_BASE_URL": "@next_public_base_url",
     "AGENT_DEFAULT_WEBHOOK_LEAD": "@agent_default_webhook_lead",
