@@ -1,22 +1,22 @@
 {
   "version": 2,
   "env": {
-    "NEXT_PUBLIC_BASE_URL": "@next_public_base_url",
-    "AGENT_DEFAULT_WEBHOOK_LEAD": "@agent_default_webhook_lead",
-    "AGENT_DEFAULT_WEBHOOK_APPT": "@agent_default_webhook_appt",
-    "AGENT_WEBHOOK_TOKEN": "@agent_webhook_token",
-    "AGENT_CALLBACK_SECRET": "@agent_callback_secret",
-    "NXTWAVE_CALENDAR_ID": "@nxtwave_calendar_id",
-    "GOOGLE_SERVICE_ACCOUNT_KEY": "@google_service_account_key",
-    "SENDGRID_API_KEY": "@sendgrid_api_key",
-    "SENDGRID_FROM_EMAIL": "@sendgrid_from_email",
-    "S3_BUCKET_NAME": "@s3_bucket_name",
-    "S3_ACCESS_KEY_ID": "@s3_access_key_id",
-    "S3_SECRET_ACCESS_KEY": "@s3_secret_access_key",
-    "S3_REGION": "@s3_region",
-    "SENTRY_DSN": "@sentry_dsn",
-    "GOOGLE_ANALYTICS_ID": "@google_analytics_id",
-    "PLAUSIBLE_DOMAIN": "@plausible_domain"
+    "NEXT_PUBLIC_BASE_URL": "https://growifyai-demo.vercel.app",
+    "AGENT_DEFAULT_WEBHOOK_LEAD": "https://koushikn8n.app.n8n.cloud/webhook/09d1214c-9830-42f4-8b3d-e54e417f50ef",
+    "AGENT_DEFAULT_WEBHOOK_APPT": "https://sachinautomate76.app.n8n.cloud/webhook/09d1214c-9830-42f4-8b3d-e54e417f50ef",
+    "AGENT_WEBHOOK_TOKEN": "demo-token",
+    "AGENT_CALLBACK_SECRET": "demo-callback-secret",
+    "NXTWAVE_CALENDAR_ID": "nxtwave@example.com",
+    "GOOGLE_SERVICE_ACCOUNT_KEY": "",
+    "SENDGRID_API_KEY": "",
+    "SENDGRID_FROM_EMAIL": "",
+    "S3_BUCKET_NAME": "",
+    "S3_ACCESS_KEY_ID": "",
+    "S3_SECRET_ACCESS_KEY": "",
+    "S3_REGION": "",
+    "SENTRY_DSN": "",
+    "GOOGLE_ANALYTICS_ID": "",
+    "PLAUSIBLE_DOMAIN": ""
   },
   "functions": {
     "src/app/api/**/*.ts": {
