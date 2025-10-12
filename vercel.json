@@ -1,0 +1,69 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "env": {
+    "NEXT_PUBLIC_BASE_URL": "@next_public_base_url",
+    "AGENT_DEFAULT_WEBHOOK_LEAD": "@agent_default_webhook_lead",
+    "AGENT_DEFAULT_WEBHOOK_APPT": "@agent_default_webhook_appt",
+    "AGENT_WEBHOOK_TOKEN": "@agent_webhook_token",
+    "AGENT_CALLBACK_SECRET": "@agent_callback_secret",
+    "NXTWAVE_CALENDAR_ID": "@nxtwave_calendar_id",
+    "GOOGLE_SERVICE_ACCOUNT_KEY": "@google_service_account_key",
+    "SENDGRID_API_KEY": "@sendgrid_api_key",
+    "SENDGRID_FROM_EMAIL": "@sendgrid_from_email",
+    "S3_BUCKET_NAME": "@s3_bucket_name",
+    "S3_ACCESS_KEY_ID": "@s3_access_key_id",
+    "S3_SECRET_ACCESS_KEY": "@s3_secret_access_key",
+    "S3_REGION": "@s3_region",
+    "SENTRY_DSN": "@sentry_dsn",
+    "GOOGLE_ANALYTICS_ID": "@google_analytics_id",
+    "PLAUSIBLE_DOMAIN": "@plausible_domain"
+  },
+  "functions": {
+    "src/app/api/**/*.ts": {
+      "maxDuration": 30
+    }
+  },
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET, POST, PUT, DELETE, OPTIONS"
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "Content-Type, Authorization, x-webhook-signature"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/demo",
+      "destination": "/#demo"
+    },
+    {
+      "source": "/how-it-works",
+      "destination": "/#how-it-works"
+    },
+    {
+      "source": "/use-cases",
+      "destination": "/#use-cases"
+    },
+    {
+      "source": "/team",
+      "destination": "/#team"
+    }
+  ]
+}
