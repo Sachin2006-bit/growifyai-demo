@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import path from "path";
 
 const nextConfig: NextConfig = {
   eslint: {
@@ -9,9 +10,7 @@ const nextConfig: NextConfig = {
     // Disable TypeScript errors during builds for demo purposes
     ignoreBuildErrors: true,
   },
-  experimental: {
-    // Remove problematic outputFileTracingRoot
-  },
+  outputFileTracingRoot: path.join(__dirname),
 };
 
 export default nextConfig;
