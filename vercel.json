@@ -2,8 +2,12 @@
   "version": 2,
   "env": {
     "NEXT_PUBLIC_BASE_URL": "https://growifyai-demo.vercel.app",
-    "AGENT_DEFAULT_WEBHOOK_LEAD": "https://koushikn8n.app.n8n.cloud/webhook/09d1214c-9830-42f4-8b3d-e54e417f50ef",
-    "AGENT_DEFAULT_WEBHOOK_APPT": "https://sachinautomate76.app.n8n.cloud/webhook/09d1214c-9830-42f4-8b3d-e54e417f50ef",
+    "NEXTAUTH_SECRET": "your-nextauth-secret-key-here",
+    "NEXTAUTH_URL": "https://growifyai-demo.vercel.app",
+    "GOOGLE_CLIENT_ID": "your-google-client-id",
+    "GOOGLE_CLIENT_SECRET": "your-google-client-secret",
+    "AGENT_DEFAULT_WEBHOOK_LEAD": "https://nishanthhh.app.n8n.cloud/webhook/09d1214c-9830-42f4-8b3d-e54e417f50ef",
+    "AGENT_DEFAULT_WEBHOOK_APPT": "https://sammmmm.app.n8n.cloud/webhook/09d1214c-9830-42f4-8b3d-e54e417f50ef",
     "AGENT_WEBHOOK_TOKEN": "demo-token",
     "AGENT_CALLBACK_SECRET": "demo-callback-secret",
     "NXTWAVE_CALENDAR_ID": "nxtwave@example.com",
@@ -16,11 +20,15 @@
     "S3_REGION": "",
     "SENTRY_DSN": "",
     "GOOGLE_ANALYTICS_ID": "",
-    "PLAUSIBLE_DOMAIN": ""
+    "PLAUSIBLE_DOMAIN": "",
+    "GEMINI_API_KEY": "AIzaSyCMYHP_FG4UI5RGRs1PZo-RHxnOdJoEHkY"
   },
   "functions": {
     "src/app/api/**/*.ts": {
       "maxDuration": 30
+    },
+    "src/app/api/automations/business-analyzer/route.ts": {
+      "maxDuration": 60
     }
   },
   "headers": [

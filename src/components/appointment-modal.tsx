@@ -64,7 +64,7 @@ export function AppointmentModal({ isOpen, onClose, userData }: AppointmentModal
         setTimeout(() => {
           setCallStatus('completed');
           setIsLoading(false);
-        }, 30000);
+        }, 30010);
       } else {
         console.error('Failed to start appointment booking call:', result.error);
         setCallStatus('failed');

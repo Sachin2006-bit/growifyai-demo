@@ -37,7 +37,7 @@ export async function POST(request: NextRequest) {
 
     // Default webhook URLs for demo (can be overridden)
     const defaultWebhookUrl = process.env.AGENT_DEFAULT_WEBHOOK_LEAD || 
-      'https://koushikn8n.app.n8n.cloud/webhook/09d1214c-9830-42f4-8b3d-e54e417f50ef';
+      'https://shannn.app.n8n.cloud/webhook-test/09d1214c-9830-42f4-8b3d-e54e417f50ef';
 
     const webhookUrl = agentWebhook || defaultWebhookUrl;
 

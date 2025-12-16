@@ -1,15 +1,25 @@
 import { Hero } from "@/components/hero";
-import { MarketOpportunity } from "@/components/market-opportunity";
-import { USPDifferentiators } from "@/components/usp-differentiators";
-import { GrowthBusinessModel } from "@/components/growth-business-model";
+import { ProductEcosystem } from "@/components/product-ecosystem";
+import { WhyGrowifyAI } from "@/components/why-growifyai";
+import { HowGrowifyAIWorks } from "@/components/how-growifyai-works";
+import { IndustryUseCases } from "@/components/industry-use-cases";
+import { SocialProof } from "@/components/social-proof";
+import { PricingSection } from "@/components/pricing-section";
+import { FinalCTA } from "@/components/final-cta";
+import { Footer } from "@/components/footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-[#020617]">
       <Hero />
-      <MarketOpportunity />
-      <USPDifferentiators />
-      <GrowthBusinessModel />
+      <ProductEcosystem />
+      <WhyGrowifyAI />
+      <HowGrowifyAIWorks />
+      <IndustryUseCases />
+      <SocialProof />
+      <PricingSection />
+      <FinalCTA />
+      <Footer />
     </main>
   );
 }

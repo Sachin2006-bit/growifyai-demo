@@ -35,7 +35,7 @@ fi
 # Start development server
 echo "🎯 Starting development server..."
 echo "========================================"
-echo "🌐 Demo will be available at: http://localhost:3000"
+echo "🌐 Demo will be available at: http://localhost:3001"
 echo "📱 Mobile testing: Use your phone's browser"
 echo "🎧 Audio: Enable microphone for full experience"
 echo "========================================"

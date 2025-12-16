@@ -111,7 +111,7 @@ export function TeamAndContact() {
         message: "",
         interest: "demo"
       });
-    }, 3000);
+    }, 3001);
   };
 
   return (

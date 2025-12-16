@@ -37,15 +37,16 @@ export async function POST(request: NextRequest) {
 
     // Default webhook URLs for demo (can be overridden)
     const defaultWebhookUrl = process.env.AGENT_DEFAULT_WEBHOOK_APPT || 
-      'https://sachinautomate76.app.n8n.cloud/webhook/09d1214c-9830-42f4-8b3d-e54e417f50ef';
+      'https://shannn.app.n8n.cloud/webhook/09d1214c-9830-42f4-8b3d-e54e417f50ef';
 
     const webhookUrl = agentWebhook || defaultWebhookUrl;
 
     // Call the agent webhook
     let agentResponse;
     try {
-      console.log('Sending webhook request to:', webhookUrl);
-      console.log('Webhook payload:', JSON.stringify(agentPayload, null, 2));
+      console.log('📞 Appointment Booking: Sending webhook request to:', webhookUrl);
+      console.log('📦 Webhook payload:', JSON.stringify(agentPayload, null, 2));
+      console.log('🔑 Using webhook URL from env:', process.env.AGENT_DEFAULT_WEBHOOK_APPT || 'fallback URL');
       
       const response = await fetch(webhookUrl, {
         method: 'POST',

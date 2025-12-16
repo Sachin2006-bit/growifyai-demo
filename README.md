@@ -45,7 +45,7 @@ A futuristic, production-ready React website showcasing AI-powered voice agents 
    ```
 
 5. **Open your browser**
-   Navigate to [http://localhost:3000](http://localhost:3000)
+   Navigate to [http://localhost:3001](http://localhost:3001)
 
 ## 🔧 Configuration
 
@@ -53,7 +53,7 @@ A futuristic, production-ready React website showcasing AI-powered voice agents 
 
 ```env
 # Base URL
-NEXT_PUBLIC_BASE_URL=http://localhost:3000
+NEXT_PUBLIC_BASE_URL=http://localhost:3001
 
 # Agent Webhooks (n8n endpoints)
 AGENT_DEFAULT_WEBHOOK_LEAD=https://your-n8n-instance.com/webhook/lead-demo
@@ -143,7 +143,7 @@ npm start
 ### Docker
 ```bash
 docker build -t growifyai-demo .
-docker run -p 3000:3000 growifyai-demo
+docker run -p 3001:3001 growifyai-demo
 ```
 
 ## 🧪 Testing

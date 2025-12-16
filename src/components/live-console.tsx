@@ -135,7 +135,7 @@ export function LiveConsole({ isOpen, onClose, demoType, userData = { name: "", 
         setIsCallActive(false);
         setIsRecording(false);
       }
-    }, 3000);
+    }, 3001);
 
     return () => clearInterval(interval);
   }, [isCallActive, demoType, userData, transcript]);

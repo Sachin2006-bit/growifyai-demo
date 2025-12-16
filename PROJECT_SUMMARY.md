@@ -138,7 +138,7 @@ npm start
 ### Deploy with Docker
 ```bash
 docker build -t growifyai-demo .
-docker run -p 3000:3000 growifyai-demo
+docker run -p 3001:3001 growifyai-demo
 ```
 
 ## 🎯 Judge Testing Scenarios
